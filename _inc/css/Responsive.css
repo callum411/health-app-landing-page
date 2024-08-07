@@ -1,0 +1,54 @@
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (max-width: 1280px) {
+    .input-group            {flex-direction: column;}
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (max-width: 1024px) {
+
+    section                         {padding:30px 0;}
+    .inner                          {width:90%;}
+
+    /* HERO PANEL */
+    .hero-panel .hero-text h1           {font-size: 30px;}
+
+    /* TWO COL PANEL */
+    .two-col-panel .inner               {flex-direction: column-reverse;}
+    .two-col-panel.flipped .inner       {flex-direction: column-reverse;}
+    .two-col-panel .two-col-text        {text-align: center;}
+
+    /* PRICING PANEL */
+    .pricing-panel .pricing-table           {gap:2em;}
+
+    /* APP PROMO */
+    .app-promo img                  {margin-bottom:0;max-width:350px;}
+
+    /* FOOTER */
+    footer                      {padding-top:30px;}
+}
+
+@media only screen and (max-width: 850px) {
+    /* COLS */
+    .cols .col {width: 100% !important;}
+    
+    /* PRICING PANEL */
+    .pricing-panel .pricing-table           {flex-direction: column;}
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (max-width: 768px) {
+    /* FOOTER */
+    footer                          {text-align: center;}
+    footer .logo                    {display: block;margin: auto;}
+    footer .cols                    {flex-direction: column-reverse;}
+    footer ul.nav-menu              {text-align: center;align-items: center;}
+    footer hr                       {margin-left:auto;margin-right:auto;}
+
+    /* SOCIAL LIST */
+    .social-list                    {justify-content: center;}
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+    .inner                  {width: 100%;padding: 5px 15px;}
+}

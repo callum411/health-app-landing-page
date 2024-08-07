@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 15px 0 0 0;
+}
+
+.form-row                       {width:100%;}
+.form-row .form-cell            {display:flex;flex-direction: column;gap:5px;}
+.form-row .form-cell label      {font-weight:bold;font-size:14px;}
+
+.input-group            {display:flex;align-items: center;gap: 10px;}
+.input-group input      {height:100%;}
+
+input[type=text],
+input[type=email]       {padding: 8px 15px; text-align: left; width: 100%; z-index: 1; position: relative;border:1px solid #cecece;font-family: "Proxima Nova Rg", sans-serif;}
+
+button, .btn                                {outline: 0;border: 0;width:fit-content;padding: 12px 18px;font-size: 14px;background-color: #000000;color: #fff;text-decoration: none;transition: all ease-in-out .35s;display:block;box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.1);}
+button:hover, .btn:hover                    {background-color: #2b2b2b;}
+
+.btn-primary                {background-color: #66A973;color: #fff;}
+.btn-primary:hover                {background-color: #7abd87;}
+
+/* TOGGLE SWITCH */
+.toggle-switch										{position:relative;width:fit-content;}
+.toggle-switch input[type=checkbox]					{display:none;}
+.toggle-switch label								{cursor: pointer;text-indent: -9999px;width: 75px;height: 35px;background: #e6e6e6;display: block;border-radius: 100px;position: relative;}
+.toggle-switch label:after							{content: '';position: absolute;top: 5px;left: 5px;width: 25px;height: 25px;background: #fff;border-radius: 90px;transition: 0.3s;}
+.toggle-switch input:checked + label				{background: #28a5d6;}
+.toggle-switch input:checked + label:after			{left: calc(100% - 5px);transform: translateX(-100%);}
+.toggle-switch .toggle-switch-text					{font-size: 14px;color:#000;margin:0;position:absolute;top:50%;}
+.toggle-switch .toggle-switch-text.left				{left: -45px;transform: translate(0, -50%);}
+.toggle-switch .toggle-switch-text.right			{right: -70px;transform: translate(0, -50%);}
